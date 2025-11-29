@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Admission Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #ecf0f1;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        .container {
+            padding: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #1f6391;
+        }
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Admission Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#apply">Apply Now</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="card">
+            <h2>Welcome to Our Admission Portal</h2>
+            <p>
+                This College Admission Management System helps students apply for courses, 
+                check eligibility, and contact the administration easily.
+            </p>
+        </section>
+
+        <section id="apply" class="card">
+            <h2>Student Admission Form</h2>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required />
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" required />
+
+                <label>Select Course</label>
+                <select>
+                    <option>B.Sc Computer Science</option>
+                    <option>BBA</option>
+                    <option>B.Com</option>
+                    <option>BA English</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section id="courses" class="card">
+            <h2>Available Courses</h2>
+            <ul>
+                <li>B.Sc Computer Science</li>
+                <li>BCA</li>
+                <li>B.Com Accounting & Finance</li>
+                <li>BA English Literature</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <p>Email: admissions@college.edu</p>
+            <p>Phone: +91 9876543210</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 College Admission Management System</p>
+    </footer>
+</body>
+</html>
